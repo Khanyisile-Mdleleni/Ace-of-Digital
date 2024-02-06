@@ -34,11 +34,6 @@ nav {
     z-index: 100;
 }
 
-
-nav .title {
-    text-decoration: none;
-}
-
 nav ul {
     display: flex;
 
@@ -52,32 +47,9 @@ nav ul li {
 
 }
 
-nav.stroke ul li a,
-nav.fill ul li a {
-    position: relative;
-}
-
-nav.stroke ul li a:after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 0%;
-    content: '.';
-    color: transparent;
-    background: #fff;
-    height: 2px;
-}
-
-nav.stroke ul li a:hover:after {
-    width: 50%;
-}
-
 nav ul li a {
     display: block;
     text-decoration: none;
-    color: #fff;
     padding: 0.35rem;
     padding-top: 20px;
     margin: 0 0.5rem;
