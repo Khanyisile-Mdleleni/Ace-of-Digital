@@ -1,1 +1,86 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
 
+.App {
+    height: 100vh;
+    width: 100vw;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1rem;
+}
+
+/* -------------------------------------Header -----------------------------------------------*/
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #C2D9FF;
+    height: 60px;
+    padding: 10px 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+
+nav .title {
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+
+}
+
+nav ul li {
+    list-style: none;
+    text-decoration: none;
+    margin-left: 70px;
+    padding-bottom: 10px;
+
+}
+
+nav.stroke ul li a,
+nav.fill ul li a {
+    position: relative;
+}
+
+nav.stroke ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #fff;
+    height: 2px;
+}
+
+nav.stroke ul li a:hover:after {
+    width: 50%;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 0.35rem;
+    padding-top: 20px;
+    margin: 0 0.5rem;
+    border-radius: 0.5rem;
+
+}
