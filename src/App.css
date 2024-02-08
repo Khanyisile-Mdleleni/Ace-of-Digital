@@ -20,7 +20,7 @@ a {
     font-size: 1rem;
 }
 
-/* -------------------------------------Header -----------------------------------------------*/
+/* ----------------------------------------- Header -----------------------------------------------*/
 .navbar {
     display: flex;
     align-items: center;
@@ -32,24 +32,41 @@ a {
     position: sticky;
     top: 0;
     z-index: 100;
-  }
-  
-  .list-items {
+}
+
+.list-items {
     display: flex;
     padding: 0;
     margin: 0;
-  }
-  
-  .list-item {
+}
+
+.list-item {
     list-style: none;
     margin-left: 20px;
-  }
-  
-  .list-item a {
+}
+
+.list-item a {
     text-decoration: none;
     padding: 20px 10px;
     border-radius: 0.5rem;
-  }
-  
+}
 
+/* ----------------------------------------- Home ------------------------------------------------*/
+.home-content {
+    padding-left: 20rem;
+    margin-top: 13rem;
+}
 
+.home-title {
+    font-size: 5rem;
+}
+
+.home-description {
+    font-size: 2rem;
+    padding-left: 1rem;
+
+}
+
+.home-button {
+    padding-left: 1rem;
+}

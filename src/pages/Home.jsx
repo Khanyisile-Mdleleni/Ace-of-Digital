@@ -1,6 +1,6 @@
 import React from "react";
 import background from "../assets/img/bg.jpg";
-import Button from 'react-bootstrap/Button';
+import Button from "react-bootstrap/Button";
 
 const Home = () => {
   return (
@@ -16,9 +16,14 @@ const Home = () => {
       // }}
     >
       <div className="home-content">
-        <h1 className="home-title">Welcome to Art of Digital</h1> 
-        <p className="home-description">Where technology meets creativity !</p> <br />
-       <Button className="home-button">Learn More</Button>
+        <h1 className="home-title">Welcome to Art of Digital</h1> <br />
+        <p className="home-description">
+          Where technology meets creativity !
+        </p>{" "}
+        <br /> <br />
+        <div className="home-button">
+        <Button >Learn More</Button>
+        </div>
       </div>
     </div>
   );

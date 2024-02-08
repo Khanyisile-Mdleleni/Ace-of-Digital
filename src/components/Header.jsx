@@ -13,7 +13,7 @@ const Header = () => {
           style={{
             width: "45px",
             height: "45px",
-            marginTop: "20px",
+            marginTop: "5px",
           }}
         />
         <h4
@@ -21,7 +21,7 @@ const Header = () => {
             position: "absolute",
             top: "8px",
             left: "60px",
-            marginTop: "15px",
+            marginTop: "10px",
           }}
         >
           Ace of Digital
