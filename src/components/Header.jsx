@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <nav className="navbar"> {/* Remove unnecessary div wrapper */}
+    <nav className="navbar"> 
       <div className="header__logo">
         <img
           src={logo}
