@@ -1,18 +1,25 @@
 import React from "react";
-import background from "../assets/img/bg.jpg"
+import background from "../assets/img/bg.jpg";
+import Button from 'react-bootstrap/Button';
 
 const Home = () => {
   return (
     <div
-    // id="home"
-    // style={{
-    //   backgroundImage: `url(${background})`,
-    //   backgroundRepeat: "no-repeat",
-    //   backgroundSize: "cover",
-    //   minHeight: "100vh",
-    //   width: "100%",
-    // }}
-  >
+      id="home"
+      // style={{
+      //   backgroundImage: `url(${background})`,
+      //   backgroundRepeat: "no-repeat",
+      //   backgroundSize: "cover",
+      //   minHeight: "100vh",
+      //   width: "100%",
+      //   backgroundColor: "rgba(255, 255, 255, 0.9)"
+      // }}
+    >
+      <div className="home-content">
+        <h1 className="home-title">Welcome to Art of Digital</h1> 
+        <p className="home-description">Where technology meets creativity !</p> <br />
+       <Button className="home-button">Learn More</Button>
+      </div>
     </div>
   );
 };
