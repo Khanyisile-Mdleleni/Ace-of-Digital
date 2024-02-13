@@ -5,6 +5,7 @@ function About() {
     <>
       <div>
         <h1 className="title">About Us</h1>
+        <h3 className="subtitle">Introduction</h3>
       </div>
       <div className="cards">
         <div className="card">
