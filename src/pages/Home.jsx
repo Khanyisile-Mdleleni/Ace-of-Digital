@@ -1,6 +1,7 @@
 import React from "react";
 import background from "../assets/img/bg.jpg";
 import Button from "react-bootstrap/Button";
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
@@ -22,7 +23,10 @@ const Home = () => {
         </p>{" "}
         <br /> <br />
         <div className="home-button">
-        <Button >Learn More</Button>
+          <Link to="/contact">
+            {" "}
+            <Button>Learn More</Button>
+          </Link>
         </div>
       </div>
     </div>
