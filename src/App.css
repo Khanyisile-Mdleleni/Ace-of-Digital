@@ -72,14 +72,14 @@ a {
 }
 
 
-/* ------------------------------------------About ---------------------------------------------*/
+/* ------------------------------------------About Us---------------------------------------------*/
 .title{
     padding-left: 45rem;
     margin-top: 1.5rem;
 }
 
 .cards{
-    padding-left: 5rem;
+    padding-left: 3.5rem;
     margin-top: 4.5rem;
     display: flex;
     flex-direction: row;

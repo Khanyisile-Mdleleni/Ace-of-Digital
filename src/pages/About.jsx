@@ -9,7 +9,7 @@ function About() {
       <div className="cards">
         <div className="card">
           <Card border="primary" style={{ width: "18rem" }}>
-            <Card.Header>Header</Card.Header>
+            <Card.Header>Vision</Card.Header>
             <Card.Body>
               <Card.Title>Primary Card Title</Card.Title>
               <Card.Text>
@@ -21,7 +21,7 @@ function About() {
         </div>
         <div className="card">
           <Card border="secondary" style={{ width: "18rem" }}>
-            <Card.Header>Header</Card.Header>
+            <Card.Header>Mission</Card.Header>
             <Card.Body>
               <Card.Title>Secondary Card Title</Card.Title>
               <Card.Text>
@@ -33,7 +33,7 @@ function About() {
         </div>
         <div className="card">
           <Card border="success" style={{ width: "18rem" }}>
-            <Card.Header>Header</Card.Header>
+            <Card.Header>Our Values</Card.Header>
             <Card.Body>
               <Card.Title>Success Card Title</Card.Title>
               <Card.Text>
