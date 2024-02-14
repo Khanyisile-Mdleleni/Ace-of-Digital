@@ -3,7 +3,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import React, { useState, useRef } from "react";
 import { Form, Input, Button, message } from "antd";
-import { PhoneOutlined, MailOutlined } from "@ant-design/icons";
+import { PhoneOutlined, MailOutlined, EnvironmentOutlined } from "@ant-design/icons";
 import ReCAPTCHA from "react-google-recaptcha";
 
 const { TextArea } = Input;
@@ -59,6 +59,10 @@ const [verified, setVerified] = useState(false);
                   <li>
                     {" "}
                     <MailOutlined /> artsofdigital@gmail.com
+                  </li>
+                  <li>
+                    {" "}
+                    <EnvironmentOutlined /> Cape Town, 8001
                   </li>
                 </ul>
               </div>
