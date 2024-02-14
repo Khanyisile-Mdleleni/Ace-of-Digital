@@ -3,7 +3,14 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import React, { useState, useRef } from "react";
 import { Form, Input, Button, message } from "antd";
-import { PhoneOutlined, MailOutlined, EnvironmentOutlined } from "@ant-design/icons";
+import {
+  PhoneOutlined,
+  MailOutlined,
+  EnvironmentOutlined,
+  FacebookOutlined,
+  LinkedinOutlined,
+  TwitterOutlined,
+} from "@ant-design/icons";
 import ReCAPTCHA from "react-google-recaptcha";
 
 const { TextArea } = Input;
@@ -17,9 +24,9 @@ const Contact = () => {
     setVerified(value); // Update the verified state with the reCAPTCHA value
   }
 
-//-------------------------------Recaptcha Verification---------------
+  //-------------------------------Recaptcha Verification---------------
 
-const [verified, setVerified] = useState(false);
+  const [verified, setVerified] = useState(false);
 
   const [form] = Form.useForm();
 
@@ -58,7 +65,7 @@ const [verified, setVerified] = useState(false);
                   </li>
                   <li>
                     {" "}
-                    <MailOutlined /> artsofdigital@gmail.com
+                    <MailOutlined /> aceofdigital@gmail.com
                   </li>
                   <li>
                     {" "}
@@ -119,6 +126,33 @@ const [verified, setVerified] = useState(false);
             </Col>
           </Row>
         </Container>
+        {/* ---------------------------------------Footer-------------------------------------------- */}
+        <footer>
+          <div id="footer-content">
+            <div className="footer_title">
+              <div id="icons">
+                <a
+                  href="https://github.com/Khanyisile-Mdleleni"
+                  target="_blank"
+                >
+                  <FacebookOutlined />
+                </a>
+                <a href="https://twitter.com/kay_mdleleni/" target="_blank">
+                  <TwitterOutlined />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/khanyisile-mdleleni-b77691250/"
+                  target="_blank"
+                >
+                  <LinkedinOutlined />
+                </a>
+              </div>
+            </div>
+            <div className="footer_title">
+              <p>&#169; Ace of Digital 2023. All right reserved</p>
+            </div>
+          </div>
+        </footer>
       </div>
     </>
   );
