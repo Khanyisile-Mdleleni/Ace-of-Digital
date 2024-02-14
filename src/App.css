@@ -108,3 +108,42 @@ a {
     list-style: none;
     margin-top: 3rem;
 }
+
+/*---------------------------------------- Footer --------------------------------------------*/
+
+footer {
+    background-color: #C2D9FF;
+    padding: 20px 0; 
+    text-align: center;
+  }
+  
+  #footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer_title {
+    flex: 1;
+  }
+  
+  #icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #icons a {
+    font-size: 24px; 
+    margin: 0 50px; 
+  }
+  
+  #icons a:hover {
+    color: #bbb; 
+  }
+  
+  .footer_title p {
+    margin: 0; 
+    font-size: 14px; 
+  }
+  
