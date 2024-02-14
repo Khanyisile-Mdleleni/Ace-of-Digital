@@ -14,7 +14,7 @@ function About() {
             <Card.Body>
               <Card.Text>
                 Our vision is to establish ourselves as the leading provider of
-                website development and design, content writing, SEO optimization,
+                website development and design, content writing,
                 social media marketing, and logo and business card design
                 services in Cape Town. We aim to be the go-to agency for
                 businesses and individuals seeking exceptional digital solutions
