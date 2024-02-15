@@ -17,7 +17,7 @@ const Home = () => {
       // }}
     >
       <div className="home-content">
-        <h1 className="home-title">Welcome to Art of Digital</h1> <br />
+        <h1 className="home-title">Welcome to Ace of Digital</h1> <br />
         <p className="home-description">
           Where technology meets creativity !
         </p>{" "}
