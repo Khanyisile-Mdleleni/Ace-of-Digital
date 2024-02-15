@@ -100,12 +100,6 @@ a {
 
 /*------------------------------------------------- Services ---------------------------------------*/
 
-.services-container {
-    max-width: 800px; 
-    margin: 0 auto; 
-    padding: 20px;
-  }
-  
   .services-heading {
     font-size: 32px; 
     color: #333; 
