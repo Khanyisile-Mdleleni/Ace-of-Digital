@@ -1,12 +1,13 @@
 import React from "react";
-import logo from "../assets/img/back.jpg";
+import boy from "../assets/img/boy.jpg";
+import girl from "../assets/img/girl.png";
 
 const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
       name: "Beven Chiwaz",
-      image: "url_to_image1.jpg",
+      image: boy,
       stars: 5,
       comment:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -14,15 +15,15 @@ const Testimonials = () => {
     {
       id: 2,
       name: "Amanda Khalela",
-      image: "url_to_image2.jpg",
+      image: girl,
       stars: 4,
       comment:
         "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     },
     {
       id: 3,
-      name: "Khanyisile Mdleleni",
-      image: "url_to_image1.jpg",
+      name: "Ayanda Mthembu",
+      image: boy,
       stars: 5,
       comment:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -30,7 +31,7 @@ const Testimonials = () => {
     {
       id: 4,
       name: "Onelisiwe Tshwane",
-      image: "url_to_image2.jpg",
+      image: girl,
       stars: 4,
       comment:
         "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
