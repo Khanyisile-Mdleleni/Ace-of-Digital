@@ -26,7 +26,6 @@ const Services = () => {
                 </p>
               </div>
             </Col>
-            <Col></Col>
             <Col>
               {" "}
               <div className="service">
@@ -63,7 +62,6 @@ const Services = () => {
                 </p>
               </div>
             </Col>
-            <Col></Col>
             <Col>
               {" "}
               <div className="service">
