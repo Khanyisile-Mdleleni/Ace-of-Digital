@@ -5,7 +5,7 @@ const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
-      name: "John Doe",
+      name: "Beven Chiwaz",
       image: "url_to_image1.jpg",
       stars: 5,
       comment:
@@ -13,7 +13,7 @@ const Testimonials = () => {
     },
     {
       id: 2,
-      name: "Jane Smith",
+      name: "Amanda Khalela",
       image: "url_to_image2.jpg",
       stars: 4,
       comment:
@@ -21,7 +21,7 @@ const Testimonials = () => {
     },
     {
       id: 3,
-      name: "Alice Johnson",
+      name: "Khanyisile Mdleleni",
       image: "url_to_image1.jpg",
       stars: 5,
       comment:
@@ -29,7 +29,7 @@ const Testimonials = () => {
     },
     {
       id: 4,
-      name: "Bob Williams",
+      name: "Onelisiwe Tshwane",
       image: "url_to_image2.jpg",
       stars: 4,
       comment:
