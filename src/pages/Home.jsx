@@ -1,5 +1,5 @@
 import React from "react";
-import background from "../assets/img/bg.jpg";
+import background from "../assets/img/bgg.jpg";
 import Button from "react-bootstrap/Button";
 import { Link } from 'react-router-dom'
 
@@ -7,14 +7,14 @@ const Home = () => {
   return (
     <div
       id="home"
-      // style={{
-      //   backgroundImage: `url(${background})`,
-      //   backgroundRepeat: "no-repeat",
-      //   backgroundSize: "cover",
-      //   minHeight: "100vh",
-      //   width: "100%",
-      //   backgroundColor: "rgba(255, 255, 255, 0.9)"
-      // }}
+      style={{
+        backgroundImage: `url(${background})`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        minHeight: "100vh",
+        width: "100%",
+        opacity: "0.9"
+      }}
     >
       <div className="home-content">
         <h1 className="home-title">Welcome to Ace of Digital</h1> <br />
