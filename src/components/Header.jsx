@@ -1,11 +1,15 @@
-import React from "react";
+import {React, useState} from "react";
 import logo from "../assets/img/logoo.png";
 import { Link } from "react-router-dom";
 
-
 const Header = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
   return (
-    <nav className="navbar"> 
+    <nav className="navbar">
       <div className="header__logo">
         <img
           src={logo}
@@ -27,21 +31,36 @@ const Header = () => {
           Ace of Digital
         </h4>
       </div>
-      <ul className="list-items">
+      <div className="mobile-menu-toggle" onClick={toggleMobileMenu}>
+        <i className="fa fa-bars"></i>
+      </div>
+      <ul
+        className={`list-items ${isMobileMenuOpen ? "mobile-menu-open" : ""}`}
+      >
         <li className="list-item">
-          <Link to="/">Home</Link>
+          <Link to="/" onClick={toggleMobileMenu}>
+            Home
+          </Link>
         </li>
         <li className="list-item">
-          <Link to="/about">About Us</Link>
+          <Link to="/about" onClick={toggleMobileMenu}>
+            About Us
+          </Link>
         </li>
         <li className="list-item">
-          <Link to="/services">Services</Link>
+          <Link to="/services" onClick={toggleMobileMenu}>
+            Services
+          </Link>
         </li>
         <li className="list-item">
-          <Link to="/testimonials">Testimonials</Link>
+          <Link to="/testimonials" onClick={toggleMobileMenu}>
+            Testimonials
+          </Link>
         </li>
         <li className="list-item">
-          <Link to="/contact">Contact Us</Link>
+          <Link to="/contact" onClick={toggleMobileMenu}>
+            Contact Us
+          </Link>
         </li>
       </ul>
     </nav>
