@@ -1,4 +1,4 @@
-import {React, useState} from "react";
+import { React, useState } from "react";
 import logo from "../assets/img/logoo.png";
 import { Link } from "react-router-dom";
 
@@ -8,6 +8,7 @@ const Header = () => {
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
+
   return (
     <nav className="navbar">
       <div className="header__logo">
@@ -31,9 +32,13 @@ const Header = () => {
           Ace of Digital
         </h4>
       </div>
-      <div className="mobile-menu-toggle" onClick={toggleMobileMenu}>
-        <i className="fa fa-bars"></i>
+      <div
+        className="mobile-menu-toggle navbar-toggle"
+        onClick={toggleMobileMenu}
+      >
+        <div className="hamburger"></div>
       </div>
+
       <ul
         className={`list-items ${isMobileMenuOpen ? "mobile-menu-open" : ""}`}
       >
@@ -66,5 +71,4 @@ const Header = () => {
     </nav>
   );
 };
-
 export default Header;
