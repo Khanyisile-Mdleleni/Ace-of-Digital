@@ -10,7 +10,7 @@ const Testimonials = () => {
       image: boy,
       stars: 5,
       comment:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Outstanding service and creativity from Ace of Digital for my business cards. Highly recommend their expertise.",
     },
     {
       id: 2,
@@ -18,7 +18,7 @@ const Testimonials = () => {
       image: girl,
       stars: 4,
       comment:
-        "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "Exceptional website design by Ace of Digital, highly recommend their services for professional and stunning online presence.",
     },
     {
       id: 3,
@@ -26,7 +26,7 @@ const Testimonials = () => {
       image: boy,
       stars: 5,
       comment:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Highly impressed with the logo design by Ace of Digital. Exceeded my expectations and truly captured the essence of my brand!",
     },
     {
       id: 4,
@@ -34,7 +34,7 @@ const Testimonials = () => {
       image: girl,
       stars: 4,
       comment:
-        "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "Incredible content writing services from Ace of Digital for my business blog. Engaging, informative, and expertly crafted content every time!",
     },
   ];
 
