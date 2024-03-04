@@ -146,25 +146,85 @@ a {
 
 /* ----------------------------------------- Home ------------------------------------------------*/
 
+.home-content-container {
+  position: absolute;
+  top: 150px;
+  left: -3%;
+}
+
 .home-content {
-    padding-left: 20rem;
-    color: #f9f9f9;
+  color: #f9f9f9;
+  padding: 0 3rem; 
 }
 
 .home-title {
-    font-size: 5rem;
-    
+  font-size: 5rem;
 }
 
 .home-description {
-    font-size: 2rem;
-    padding-left: 1rem;
-
+  font-size: 2rem;
 }
 
 .home-button {
-    padding-left: 1rem;
+  padding-left: 1rem;
 }
+
+/* Media query for tablets */
+@media (max-width: 1200px) {
+  .home-content-container {
+      top: 100px;
+  }
+
+  .home-content {
+      padding: 0 6rem; 
+  }
+
+  .home-title {
+      font-size: 4rem;
+  }
+
+  .home-description {
+      font-size: 1.75rem;
+  }
+}
+
+/* Media query for larger screens */
+@media (min-width: 1400px) {
+  .home-content {
+      padding: 0 15rem; 
+  }
+
+  .home-title {
+      font-size: 6rem; 
+  }
+
+  .home-description {
+      font-size: 2.5rem; 
+  }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 576px) {
+  .home-content-container {
+      top: 50px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+  }
+
+  .home-content {
+      padding: 0 1rem; 
+  }
+
+  .home-title {
+      font-size: 2rem;
+  }
+
+  .home-description {
+      font-size: 1rem;
+  }
+}
+
 
 
 /* ------------------------------------------About Us---------------------------------------------*/
