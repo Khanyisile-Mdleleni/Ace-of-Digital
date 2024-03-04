@@ -17,7 +17,7 @@ const Home = () => {
         opacity: "0.9"
       }}
     >
-      <div className="home-content-container" style={{ position: "absolute", top: "120px", left: "1%" }}>
+      <div className="home-content-container" style={{ position: "absolute", top: "150px", left: "1%" }}>
         <div className="home-content">
           <h1 className="home-title">Welcome to Ace of Digital</h1> <br />
           <p className="home-description">
