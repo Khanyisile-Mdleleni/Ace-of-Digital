@@ -16,7 +16,7 @@ function About() {
                 Our vision is to establish ourselves as the leading provider of
                 website development and design, content writing,
                 social media marketing, and logo and business card design
-                services in Cape Town. We aim to be the go-to agency for
+                services. We aim to be the go-to agency for
                 businesses and individuals seeking exceptional digital solutions
                 that drive their online presence and business growth.
               </Card.Text>
