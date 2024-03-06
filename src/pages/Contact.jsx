@@ -114,7 +114,7 @@ const Contact = () => {
                 <Form.Item>
                   <br />
                   <ReCAPTCHA
-                    sitekey="6LdbpW8pAAAAAMOCJpnuJ1Rv4Ido5eR6sMkNRQFB"
+                    sitekey="6LeEh4wpAAAAAM_h5MFPPXwIza_hqO0T4BFalRKL"
                     onChange={handleRecaptchaChange}
                   />
                   <br />
