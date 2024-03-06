@@ -263,13 +263,13 @@ a {
 
 @media (min-width: 992px) { /* Larger screens */
   .title {
-      padding-left: 45rem;
-      text-align: left; 
+    text-align: center;
+    margin-top: 1.5rem;
   }
   
   .subtitle {
-      padding-left: 45.5rem;
-      text-align: left; 
+    text-align: center;
+    margin-top: 1rem;
   }
 }
 
