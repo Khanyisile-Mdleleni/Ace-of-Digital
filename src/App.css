@@ -229,27 +229,50 @@ a {
 
 /* ------------------------------------------About Us---------------------------------------------*/
 
-.title{
-    padding-left: 45rem;
-    margin-top: 1.5rem;
+.title {
+  text-align: center;
+  margin-top: 1.5rem;
 }
 
-.subtitle{
-    padding-left: 45.5rem;
-    margin-top: 1rem;
+.subtitle {
+  text-align: center;
+  margin-top: 1rem;
 }
 
-.cards{
-    padding-left: 3.5rem;
-    margin-top: 4.5rem;
-    display: flex;
-    flex-direction: row;
+.cards {
+  margin-top: 4.5rem;
+  display: flex;
+  flex-direction: column; 
 }
 
-.card{
-    margin-left: 5rem;
-    border: none;
+.card {
+  margin: 1rem auto; 
 }
+
+@media (min-width: 768px) { /* Tablet and larger screens */
+  .cards {
+      flex-direction: row; 
+      justify-content: space-around; 
+  }
+  
+  .card {
+      margin: 0; 
+      width: 18rem; 
+  }
+}
+
+@media (min-width: 992px) { /* Larger screens */
+  .title {
+      padding-left: 45rem;
+      text-align: left; 
+  }
+  
+  .subtitle {
+      padding-left: 45.5rem;
+      text-align: left; 
+  }
+}
+
 
 /*------------------------------------------------- Services ---------------------------------------*/
 
@@ -285,8 +308,9 @@ a {
   padding: 20px;
 }
 
+
 .title-t {
-  padding-left: 42rem;
+  text-align: center;
   margin-top: 1.5rem;
 }
 
@@ -339,9 +363,9 @@ a {
 
 /*-------------------------------------- Contact Us ------------------------------------------*/
 
-.subtitle-c{
-    padding-left: 46rem;
-    margin-top: 1rem;
+.subtitle-c {
+  text-align: center;
+  margin-top: 1rem;
 }
 .contacts ul li{
     list-style: none;
