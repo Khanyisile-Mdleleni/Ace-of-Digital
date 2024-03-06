@@ -1,39 +1,23 @@
+import React, { useState, useRef } from "react";
+import { Form, Input, Button, message } from "antd";
+import { PhoneOutlined, MailOutlined, EnvironmentOutlined, FacebookOutlined, LinkedinOutlined, TwitterOutlined } from "@ant-design/icons";
+import ReCAPTCHA from "react-google-recaptcha";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import React, { useState, useRef } from "react";
-import { Form, Input, Button, message } from "antd";
-import {
-  PhoneOutlined,
-  MailOutlined,
-  EnvironmentOutlined,
-  FacebookOutlined,
-  LinkedinOutlined,
-  TwitterOutlined,
-} from "@ant-design/icons";
-import ReCAPTCHA from "react-google-recaptcha";
 
 const { TextArea } = Input;
+
 const Contact = () => {
-  //------------------------------------------Ref for Recaptcha--------------
-
-  const recaptchaRef = useRef();
-
-  function handleRecaptchaChange(value) {
-    console.log("Captcha value:", value);
-    setVerified(value); // Update the verified state with the reCAPTCHA value
-  }
-
-  //-------------------------------Recaptcha Verification---------------
-
   const [verified, setVerified] = useState(false);
-
+  const recaptchaRef = useRef();
   const [form] = Form.useForm();
 
   const onFinish = (values) => {
     console.log("Received values of form: ", values);
     message.success("Message sent successfully");
     form.resetFields(); // Reset the form fields
+    recaptchaRef.current.reset(); // Reset the reCAPTCHA
   };
 
   const formItemLayout = {
@@ -49,8 +33,7 @@ const Contact = () => {
     <>
       <div>
         <h1 className="title">Contact Us</h1>
-        <h3 className="subtitle-c">Get in touch</h3> <br />
-        <br />
+        <h3 className="subtitle-c">Get in touch</h3> <br /> <br />
       </div>
       <div>
         <Container>
@@ -114,8 +97,9 @@ const Contact = () => {
                 <Form.Item>
                   <br />
                   <ReCAPTCHA
+                    ref={recaptchaRef}
                     sitekey="6LeEh4wpAAAAAM_h5MFPPXwIza_hqO0T4BFalRKL"
-                    onChange={handleRecaptchaChange}
+                    onChange={value => setVerified(value)}
                   />
                   <br />
                   <Button type="primary" htmlType="submit" disabled={!verified}>
